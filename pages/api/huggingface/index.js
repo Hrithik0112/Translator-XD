@@ -2,7 +2,7 @@
 
 import { HfInference } from "@huggingface/inference";
 
-const HF_ACCESS_TOKEN = "youapikey";
+const HF_ACCESS_TOKEN = process.env(HF_ACCESS_TOKEN);
 
 const inference = new HfInference(HF_ACCESS_TOKEN);
 
