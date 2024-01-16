@@ -2,9 +2,7 @@
 
 import { HfInference } from "@huggingface/inference";
 
-const HF_ACCESS_TOKEN = process.env(HF_ACCESS_TOKEN);
-
-const inference = new HfInference(HF_ACCESS_TOKEN);
+const inference = new HfInference(process.env.HF_ACCESS_TOKEN);
 
 export default async function handler(req, res) {
   const { text, lang } = req.body;
