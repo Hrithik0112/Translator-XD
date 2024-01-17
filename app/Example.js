@@ -67,7 +67,7 @@ const Example = () => {
                 </button>
               </div>
               <div className="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-                <p className="text-lg text-gray-700">{translatedText}</p>
+                <p className="text-lg text-gray-700">Translated Text : {translatedText}</p>
               </div>
             </div>
           </div>
